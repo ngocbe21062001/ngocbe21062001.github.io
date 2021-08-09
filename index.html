@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Name</title>
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./main.js">
+</head>
+<body>
+    <!--Menu Side Bar-->
+    <div class="nav-bar navbar-responsive " id="mySideBar">
+        <a href="" class="close-btn" id="closeBtn">Close Menu</a>
+        <div class="mySidebar__container">
+            <h1 class="heading">
+                <b>
+                    Company
+                    <br>
+                    Name
+                </b>
+            </h1>
+        </div>
+        <div class="mySisebar__item" id="menuItem">
+            <ul>
+                <li><a  href="#" class="item">Home</a></li>
+                <li><a  href="#showcase" class="item" >Showcase</a></li>
+                <li><a  href="#service" class="item">Services</a></li>
+                <li><a  href="#designer" class="item">Designers</a></li>
+                <li><a  href="#package" class="item">Package</a></li>
+                <li><a  href="#contact" class="item">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <header class="top-sidebar">
+        <a class="menu-btn" id="MenuBtn">
+            <i class="fas fa-bars"></i>
+        <a>
+        <span>Company Name</span>
+    </header>
+    <div class="overlay-menu" id="myOverlay"></div>
+  
+    <!--Page Content-->
+    <div id="showcase"  class="content content-responsive">
+        <!--Header-->
+        <div id="home" class="content__header">
+            <h1 class="content__header-1">Interior Design</h1>
+            <h1 class="content__header-2">Showcase.</h1>
+            <hr>
+        </div>
+        <!--Photo-->
+        <div class="GridPhoto">
+            <div class="col col-responsive">
+                <img onclick="onClick(this)" class="col-picture" src="https://www.w3schools.com/w3images/kitchenconcrete.jpg" alt="Concrete meets bricks">
+                <img onclick="onClick(this)" class="col-picture" src="https://www.w3schools.com/w3images/livingroom.jpg" alt="Light, white and tight scandinavian design">
+                <img onclick="onClick(this)" class="col-picture" src="https://www.w3schools.com/w3images/diningroom.jpg" alt="White walls with designer chairs">
+            </div>
+
+            <div class="col col-responsive">
+                <img onclick="onClick(this)" class="col-picture"  src="https://www.w3schools.com/w3images/atrium.jpg" alt="Windows for the atrium">
+                <img onclick="onClick(this)" class="col-picture"  src="https://www.w3schools.com/w3images/bedroom.jpg" alt="Bedroom and office in one space">
+                <img onclick="onClick(this)" class="col-picture"  src="https://www.w3schools.com/w3images/livingroom2.jpg" alt="Scandinavian design">
+            </div>
+        </div>
+        <!--Onclick with photo-->
+        <div id="modal01" class="photo" onclick="this.style.display='none'">
+            <span class="close-picture" id="closePicture">
+                <i class="fas fa-times-circle"></i>
+            </span>
+            <div class="picture-animation">
+                <img id="img01" class="img" src="" alt="">
+                <p id="caption"></p>
+
+                
+            </div>
+        </div>
+        <!--Service-->
+        <div id="service" class="Service">
+            <h1 class="Service__item">Services.</h1>
+            <hr>
+            <p class="Service__text">
+                We are a interior design service that focus on what's best for your home and what's best for you!
+            </p>
+            <p class="Service__text">
+                Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <!--Designer-->
+        <div id="designer" class="Designer">
+            <h1 class="Designer__item">Designers.</h1>
+            <hr>
+            <p class="Designer__text">
+                The best team in the world.
+            </p>
+            <p class="Designer__text">
+                We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p class="Designer__highlight">
+                Our designers are thoughtfully chosen:
+            </p>
+        </div>
+        <!--Popular Person-->
+        <div class="People">
+
+            <!--Picture1-->
+            <div class="People__picture responsive">
+                <div class="picture-background ">
+                    <img src="https://www.w3schools.com/w3images/team2.jpg" alt="" class="Picture1">
+                    <div class="picture-container">
+                        <h3 class="picture-header">
+                            John Doe
+                        </h3>
+                        <p class="picture-text">
+                            CEO & Founder
+                        </p>
+                        <p class="picture-paragraph">
+                            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--Picture2-->
+            <div class="People__picture responsive">
+                <div class="picture-background ">
+                    <img src="https://www.w3schools.com/w3images/team1.jpg" alt="" class="Picture1">
+                    <div class="picture-container">
+                        <h3 class="picture-header">
+                            Jane Doe
+                        </h3>
+                        <p class="picture-text">
+                            Designer
+                        </p>
+                        <p class="picture-paragraph">
+                            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--Picture3-->
+            <div class="People__picture responsive">
+                <div class="picture-background ">
+                    <img src="https://www.w3schools.com/w3images/team3.jpg" alt="" class="Picture1">
+                    <div class="picture-container">
+                        <h3 class="picture-header">
+                            Mike Ross
+                        </h3>
+                        <p class="picture-text">
+                            Architect
+                        </p>
+                        <p class="picture-paragraph">
+                            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--Packages-->
+        <div id="package" class="Package">
+            <h1 class="Package__item">Packages.</h1>
+            <hr>
+            <p class="Package__text">
+                Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            </p>
+            <!--Price-->
+            <div class="Price mobile">
+                <div class="Price__col col-mobile">
+                    <ul class="Price-block">
+                        <li class="Price__item-heading">Basic</li>
+                        <li class="Price__item1">Floorplanning</li>
+                        <li class="Price__item1">10 hours support</li>
+                        <li class="Price__item1">Photography</li>
+                        <li class="Price__item1">20% furniture discount</li>
+                        <li class="Price__item1">Good deals</li>
+                        <li class="Price__item1">
+                            <h2 class="Price-text">$ 199</h2>
+                            <span class="Price-opacity">per room</span>
+                        </li>
+                        <li>
+                            <button class="Price-btn white-btn">Sign Up</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Price__col col-mobile">
+                    <ul class="Price-block">
+                        <li class="Price__item-heading1">Pro</li>
+                        <li class="Price__item1">Floorplanning</li>
+                        <li class="Price__item1">50 hours support</li>
+                        <li class="Price__item1">Photography</li>
+                        <li class="Price__item1">50% furniture discount</li>
+                        <li class="Price__item1">GREAT deals</li>
+                        <li class="Price__item1">
+                            <h2 class="Price-text">$ 249</h2>
+                            <span class="Price-opacity">per room</span>
+                        </li>
+                        <li>
+                            <button class="Price-btn red-btn">Sign Up</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Contact-->
+        <div id="contact" class="Contact">
+            <h1 class="Contact__item">Contact.</h1>
+            <hr>
+            <p class="Contact__text">
+                Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!
+            </p>
+            <form action="">
+                <div class="Contact-form">
+                    <label for="">Name</label>
+                    <input type="text" name="Name" required class="Contact-input">
+                </div>
+                <div class="Contact-form">
+                    <label for="">Email</label>
+                    <input type="email" name="Email" required class="Contact-input">
+                </div>
+                <div class="Contact-form">
+                    <label for="">Message</label>
+                    <input type="text" name="Message" required class="Contact-input">
+                </div>
+                <button type="submit" class="Contact-btn">SEND MESSAGE</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="footer-item">
+            Powered by
+            <a href="" class="footer-link">w3.css</a>
+        </p>
+    </div>
+   
+  
+    <script>
+       var menuBtn = document.getElementById('MenuBtn');
+       var mySideBar =document.getElementById('mySideBar');
+       var closeBtn= document.getElementById('closeBtn');
+       var Overlay =document.getElementById('myOverlay');
+       var menuItem = document.getElementById('menuItem');
+      function show(){
+        mySideBar.style.display='block';
+        Overlay.style.display='block';
+      }
+      function hide(){
+       
+        closeBtn.style.display=null;
+        Overlay.style.display=null;
+      }
+      menuBtn.addEventListener('click', show)
+      closeBtn.addEventListener('click', hide)
+
+      menuItem.onclick = function(){
+          mySideBar.style.display=null;
+          Overlay.style.display=null;
+      }
+      /*Photo click*/
+      function onClick(element){
+          document.getElementById('img01').src=element.src;
+          document.getElementById('modal01').style.display='block';
+          document.getElementById('caption').innerHTML=element.alt;
+      }
+    </script>
+
+
+    
+    
+     
+   
+
+        
+    
+            
+</body>
+</html>
